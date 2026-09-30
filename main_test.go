@@ -13,7 +13,7 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/KabirSinghBhatia/BitChord/backend/protocol"
+	"github.com/R1Blmmakan/jam_backend/protocol"
 )
 
 func setupTestServer() *httptest.Server {

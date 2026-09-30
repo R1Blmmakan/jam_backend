@@ -1,4 +1,4 @@
-module github.com/KabirSinghBhatia/BitChord/backend
+module github.com/R1Blmmakan/jam_backend
 
 go 1.27.0
 

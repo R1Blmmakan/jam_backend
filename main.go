@@ -23,12 +23,12 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/KabirSinghBhatia/BitChord/backend/clock"
-	"github.com/KabirSinghBhatia/BitChord/backend/codes"
-	"github.com/KabirSinghBhatia/BitChord/backend/config"
-	"github.com/KabirSinghBhatia/BitChord/backend/hub"
-	"github.com/KabirSinghBhatia/BitChord/backend/party"
-	"github.com/KabirSinghBhatia/BitChord/backend/protocol"
+	"github.com/R1Blmmakan/jam_backend/clock"
+	"github.com/R1Blmmakan/jam_backend/codes"
+	"github.com/R1Blmmakan/jam_backend/config"
+	"github.com/R1Blmmakan/jam_backend/hub"
+	"github.com/R1Blmmakan/jam_backend/party"
+	"github.com/R1Blmmakan/jam_backend/protocol"
 )
 
 var (
