@@ -1,0 +1,30 @@
+﻿services:
+  jam-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bitchord-jam-backend
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - TRUST_PROXY=true
+      - JAM_TRUST_PROXY=true
+      - JAM_TCP_NODELAY=true
+      - JAM_WS_READ_BUFFER_SIZE=2048
+      - JAM_WS_WRITE_BUFFER_SIZE=2048
+      - JAM_MAX_PARTIES=500
+      - JAM_MAX_MEMBERS=5
+      - JAM_PLAY_LEAD_MS=350
+      - JAM_STATE_HEARTBEAT_MS=5000
+      - JAM_DISCONNECT_GRACE_MS=45000
+      - JAM_EMPTY_PARTY_TTL_MS=60000
+      - JAM_PARTY_MAX_AGE_MS=86400000
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 256M
